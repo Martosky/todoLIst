@@ -12,3 +12,37 @@ main{
     padding: 20px;
     background-image: linear-gradient(90deg, rgb(238, 238, 7), rgb(231, 152, 4), rgb(238, 75, 25));
 }
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.elem-section{
+    width: 50%;
+    margin: 0 auto;
+    background-color: beige;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+input{
+    outline: none;
+    border: none;
+    background: transparent;
+    padding-left: 10px;
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+button{
+    outline: none;
+    border: none;
+    background: transparent;
+    padding-left: 10px;
+    font-size: 15px;
+}
