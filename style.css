@@ -15,6 +15,7 @@ main{
     margin: 0 auto;
     padding: 20px;
     background-image: linear-gradient(90deg, rgb(238, 238, 7), rgb(231, 152, 4), rgb(238, 75, 25));
+    box-shadow: 2px 3px 2px  rgba(0, 0, 0, 0.3);
 }
 
 h1{
@@ -47,7 +48,8 @@ input{
 button{
     outline: none;
     border: none;
-    width: 15%;
+    width: 20%;
+    border-radius: 20px;
     text-align: center;
     background-color: rgb(4, 4, 71);
     color: white;
@@ -57,4 +59,16 @@ button{
 }
 button:hover{
     transform: scale(1.1);
+    background-color: rgb(99, 99, 240);
+    color: black;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li{
+    list-style-type: none;
 }
