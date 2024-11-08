@@ -9,6 +9,13 @@ function outputValue(){
    if(inputval.value === "" || regex.test(inputval.value) == false){
     alert("Invalid input")
    }else{
-    
+    let li = document.createElement("li");
+    li.innerHTML = inputval.value;
+    outputelem.appendChild(li)
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+
    }
+   inputval.value = ""
 }
