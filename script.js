@@ -23,8 +23,8 @@ function outputValue(){
 
 outputValue.addEventListener("click", function(e){
     if(e.target.tagName == "LI"){
-        e.target.classList.toggle("li")
+        e.target.classList.toggle("check")
     }else if(e.target.tagName === "SPAN"){
-        e.target.parentElement.remove
+        e.target.parentElement.remove()
     }
 })
