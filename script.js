@@ -5,8 +5,8 @@ const outputelem = document.getElementById("output")
 button.addEventListener("click", outputValue);
 
 function outputValue(){
-    let regex = /^[a-z][a-z]+/i
-   if(inputval.value === "" || regex.test(inputval.value) == false){
+   
+   if(inputval.value === "" ){
     alert("Invalid input")
    }else{
     let li = document.createElement("li");
@@ -29,4 +29,13 @@ outputelem.addEventListener("click", function(e){
         e.target.parentElement.remove()
         saveData()
     }
-})
+}, false)
+
+function saveData(){
+    localStorage.setItem("data", output.innerHTML)
+};
+
+function showData(){
+    output.innerHTML = localStorage.setItem("data")
+}
+showData()
