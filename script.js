@@ -21,10 +21,12 @@ function outputValue(){
    saveData()
 }
 
-outputValue.addEventListener("click", function(e){
-    if(e.target.tagName == "LI"){
+outputelem.addEventListener("click", function(e){
+    if(e.target.tagName === "LI"){
         e.target.classList.toggle("check")
+        saveData()
     }else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove()
+        saveData()
     }
 })
